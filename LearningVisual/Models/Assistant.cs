@@ -3,7 +3,7 @@ using LearningVisual.Models.AbstractModels;
 
 namespace LearningVisual.Models;
 
-internal class CEO : BaseEmployee, ICEO
+internal class Assistant : Employee, IAssistant 
 {
-    public bool BenificialOwner { get; set; } = true;
+
 }

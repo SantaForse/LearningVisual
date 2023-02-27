@@ -1,6 +1,6 @@
 ﻿using LearningVisual.Interfaces;
 
-namespace LearningVisual.Models;
+namespace LearningVisual.Models.AbstractModels;
 
 internal abstract class Employee : BaseEmployee, IEmployee
 

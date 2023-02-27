@@ -1,5 +1,6 @@
 ﻿
 using LearningVisual.Interfaces;
+using LearningVisual.Models.AbstractModels;
 
 namespace LearningVisual.Models;
 
