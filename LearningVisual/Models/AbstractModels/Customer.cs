@@ -1,7 +1,6 @@
-﻿
-using LearningVisual.Interfaces;
+﻿using LearningVisual.Interfaces;
 
-namespace LearningVisual.Models;
+namespace LearningVisual.Models.AbstractModels;
 
 internal class Customer : ICustomer
 {
