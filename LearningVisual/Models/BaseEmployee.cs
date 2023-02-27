@@ -3,7 +3,7 @@ using LearningVisual.Interfaces;
 
 namespace LearningVisual.Models;
 
-internal class BaseEmployee : IBaseEmployee
+internal abstract class BaseEmployee : IBaseEmployee
 {
     public Guid Id { get; set; } = Guid.NewGuid();
 
