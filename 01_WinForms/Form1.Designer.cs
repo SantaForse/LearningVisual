@@ -38,37 +38,42 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(129, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 20);
+            this.label1.Size = new System.Drawing.Size(117, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "FirstName";
             // 
             // tb_FirstName
             // 
+            this.tb_FirstName.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tb_FirstName.Location = new System.Drawing.Point(129, 133);
             this.tb_FirstName.Name = "tb_FirstName";
-            this.tb_FirstName.Size = new System.Drawing.Size(532, 27);
+            this.tb_FirstName.Size = new System.Drawing.Size(532, 31);
             this.tb_FirstName.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(129, 190);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 20);
+            this.label2.Size = new System.Drawing.Size(114, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "LastName";
             // 
             // tb_LastName
             // 
+            this.tb_LastName.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tb_LastName.Location = new System.Drawing.Point(130, 213);
             this.tb_LastName.Name = "tb_LastName";
-            this.tb_LastName.Size = new System.Drawing.Size(531, 27);
+            this.tb_LastName.Size = new System.Drawing.Size(531, 31);
             this.tb_LastName.TabIndex = 3;
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(314, 309);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 61);
