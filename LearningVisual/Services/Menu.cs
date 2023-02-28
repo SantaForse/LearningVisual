@@ -85,7 +85,6 @@ internal class Menu
         Console.Clear();
         Console.WriteLine("Add a new private customer");
 
-
         IPrivateCustomer customer = new PrivateCustomer();
          Console.Write("Write your first name: ");
         customer.FirstName = Console.ReadLine() ?? "";
@@ -114,7 +113,7 @@ internal class Menu
         Console.WriteLine("2. CFO");
         Console.WriteLine("3. Assistant");
         Console.WriteLine("4. Key Account Manager");
-        Console.WriteLine("Choose a type of employee you want to create: ");
+        Console.Write("Choose a type of employee you want to create: ");
         var option = Console.ReadLine();
 
         switch (option)
