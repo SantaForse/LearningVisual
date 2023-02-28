@@ -2,5 +2,12 @@
 
 var menu = new Menu();
 
-menu.WelcomeMenu();
+menu.FilePath = @$"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\content.json";
+
+while(true)
+{
+    Console.Clear();
+    menu.WelcomeMenu();
+}
+
 

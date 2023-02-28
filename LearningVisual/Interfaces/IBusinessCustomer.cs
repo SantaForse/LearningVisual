@@ -1,6 +1,6 @@
 ﻿namespace LearningVisual.Interfaces;
 
-internal interface IBusinessCustomer
+internal interface IBusinessCustomer : ICustomer
 {
     string OrganizationNumber { get; set; }
     
