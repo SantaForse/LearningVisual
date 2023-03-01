@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _02_WPF.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,14 +21,34 @@ namespace _02_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private readonly List<IEmployee> employees = new();
+
+
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void btn_Add_Click(object sender, RoutedEventArgs e)
+        private void Btn_Add_Click(object sender, RoutedEventArgs e)
         {
+            employees.Add(new Emplyee
+            {
+                FirstName = tb_FirstName.Text,
+                LastName = tb_LastName.Text,
+                Email = tb_Email.Text,
+            });
 
+            ClearForm();
+
+        }
+
+        private void ClearForm()
+        {
+            tb_FirstName.Text = "";
+            tb_LastName.Text = "";
+            tb_Email.Text = "";
         }
     }
 }
