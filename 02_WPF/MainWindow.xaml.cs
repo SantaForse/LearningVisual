@@ -24,5 +24,10 @@ namespace _02_WPF
         {
             InitializeComponent();
         }
+
+        private void btn_Add_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
