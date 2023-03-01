@@ -24,5 +24,11 @@ namespace _01_WPF
         {
             InitializeComponent();
         }
+
+        private void btn_Show_Click(object sender, RoutedEventArgs e)
+        {
+            var displayName = $"{tb_FirstName.Text} {tb_LastName.Text}";
+            MessageBox.Show(displayName);
+        }
     }
 }
