@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Newtonsoft.Json;
+using System.Collections.ObjectModel;
 
 namespace _02_WPF
 {
@@ -24,7 +25,7 @@ namespace _02_WPF
     public partial class MainWindow : Window
     {
 
-        private List<IEmployee> employees = new();
+        private ObservableCollection<Employee> employees = new ObservableCollection<Employee>();
         private readonly FileService file = new();
         
 
@@ -41,7 +42,7 @@ namespace _02_WPF
         {  
             try
             {
-                var items = JsonConvert.DeserializeObject<List<IEmployee>>(file.Read());
+                var items = JsonConvert.DeserializeObject<ObservableCollection<Employee>>(file.Read());
                 if (items != null)
                     employees = items; 
             }
@@ -52,7 +53,7 @@ namespace _02_WPF
 
         private void Btn_Add_Click(object sender, RoutedEventArgs e)
         {
-            employees.Add(new Emplyee
+            employees.Add(new Employee
             {
                 FirstName = tb_FirstName.Text,
                 LastName = tb_LastName.Text,

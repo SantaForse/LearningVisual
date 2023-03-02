@@ -12,10 +12,10 @@ internal interface IEmployee
 
     string Email { get; set; }
 
-    string DisplayName => $"{FirstName} {LastName}";
+    
 }
 
-    internal class Emplyee : IEmployee
+    internal class Employee : IEmployee
 
     {
         public Guid Id { get; set; } = Guid.NewGuid();
@@ -26,4 +26,6 @@ internal interface IEmployee
 
         public string Email { get; set; } = null!;
 
-    }
+        public string DisplayName => $"{FirstName} {LastName}";
+
+}
